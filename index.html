@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title></title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<div class="header__wrapper">
+						<a class="logo" href="index.html">
+							<img class="logo__img" src="img/icons/logo.svg" alt="" draggable="false">
+						</a>
+						<div class="region region-2">
+							<button class="region__button">
+								<img class="region__icon-location" src="img/icons/location__grey.svg" alt="">
+								<span class="region__text region__text-2">Тольятти</span>
+								<img class="region__icon" src="img/icons/arrow__grey.svg" alt="" draggable="false">
+							</button>
+							<!-- список городов -->
+							<div class="region__overflow region__overflow-2">
+								<ul class="region__list">
+									<li class="region__title">
+										<button value="English" class="btnlang btnlang-2">Тольятти</button>
+									</li>
+									<li class="region__title">
+										<button value="English" class="btnlang btnlang-2">Москва</button>
+									</li>
+									<li class="region__title">
+										<button value="Русский" class="btnlang btnlang-2">Санкт-Петербург</button>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="header__wrapper2">
+						<button class="catalog">
+							<div class="catalog-icon">
+								<div class="catalog-icon__line catalog-icon__line-1"></div>
+								<div class="catalog-icon__line catalog-icon__line-2"></div>
+								<div class="catalog-icon__line catalog-icon__line-3"></div>
+								<div class="catalog-icon__line catalog-icon__line-4"></div>
+							</div>
+							Каталог
+						</button>
+						<button class="catalog-2 catalog-2-header">
+							<div class="catalog-icon catalog-icon-2">
+								<div class="catalog-icon__line catalog-icon__line-1"></div>
+								<div class="catalog-icon__line catalog-icon__line-2"></div>
+								<div class="catalog-icon__line catalog-icon__line-3"></div>
+								<div class="catalog-icon__line catalog-icon__line-4"></div>
+							</div>
+							Каталог
+						</button>
+						<form class="header__search">
+							<div class="tag-container">
+
+							</div>
+							<input class="header__input" type="text" placeholder="Искать товары и категории">
+							<div class="header__search-wrapper search-buttons">
+								<button class="header__btn vin">
+									<img src="img/icons/VIN.svg" alt="vin">
+								</button>
+								<button class="header__btn" id="searchBtn">
+									<img src="img/icons/searchFilter.svg" alt="searchFilter" draggable="false">
+								</button>
+								<button class="header__btn photo">
+									<img class="header__btn-img" src="img/icons/photo.svg" alt="photo"
+										draggable="false">
+								</button>
+								<button class="header__btn-search" type="submit">
+									<img class="header__btn-loop" src="img/icons/loop.svg" alt="search"
+										draggable="false">
+								</button>
+								<button class="header__btn voice">
+									<img class="header__btn-img" src="img/icons/voice.svg" alt="voice"
+										draggable="false">
+								</button>
+							</div>
+						</form>
+					</div>
+					<nav class="header__nav">
+						<ul class="header__list">
+							<li class="header__item">
+								<a class="header__link" href="#">
+									<img class="header__img" src="img/icons/login.svg" alt="" draggable="false">
+									<span class="header__text">
+										Войти
+									</span>
+								</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#">
+									<img class="header__img" src="img/icons/basket.svg" alt="" draggable="false">
+									<span class="header__text">
+										Корзина
+									</span>
+								</a>
+							</li>
+							<li class="header__item">
+								<a class="header__link" href="#">
+									<img class="header__img" src="img/icons/heart.svg" alt="" draggable="false">
+									<span class="header__text">
+										Избранное
+									</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<!-- меню для поиска -->
+			<div class="search-bg active">
+				<div class="search-bg__inner">
+					<div class="search-bg__wrapper">
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="BrandOfVehicle">
+								<span class="search-bg__span">
+									Марка
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="BrandOfVehicleInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="ModelName">
+								<span class="search-bg__span">
+									Модель
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="ModelNameInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="Modification">
+								<span class="search-bg__span">
+									Модификация
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="ModificationInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search-bg__wrapper">
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="BodyVehicle">
+								<span class="search-bg__span">
+									Кузов
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="BodyVehicleInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="YearStart">
+								<span class="search-bg__span">
+									Год с
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="YearStartInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="YearEnd">
+								<span class="search-bg__span">
+									Год до
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="YearEndInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="search-bg__wrapper">
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="Engine">
+								<span class="search-bg__span">
+									Двигатель
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="EngineInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="Transmission">
+								<span class="search-bg__span">
+									Трансмиссия
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="TransmissionInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="search-bg__select-container">
+							<button class="search-bg__select-btn" type="button" id="PartNumber">
+								<span class="search-bg__span">
+									Part Number
+								</span>
+							</button>
+							<div class="search-bg__select-dropdown">
+								<div class="search-bg__select-dropdown-container">
+									<input class="search-bg__select-dropdown-search" type="text" placeholder="Поиск"
+										autocomplete='off'>
+									<ul class="search-bg__select-dropdown-list" id="PartNumberInner">
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/searchInput.js"></script>
+</body>
+
+</html>
